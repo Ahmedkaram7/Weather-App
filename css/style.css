@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #033844;
+}
+
+.card {
+  width: 100%;
+  max-width: 470px;
+  margin: 100px auto 0;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  border-radius: 14px;
+  padding: 30px 20px;
+  color: #fff;
+}
+
+.card .search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.card .search input {
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  color: #555;
+  margin-right: 20px;
+  background: #f9fcf6;
+}
+.card .search input::placeholder {
+  color: #b8b8b8;
+}
+.card .search input:focus {
+  box-shadow: 0 0 3px 1px #0c5126;
+}
+
+.card .search button {
+  padding: 0;
+  height: 50px;
+  width: 63px;
+  border-radius: 50%;
+  border: none;
+  background: #f9fcf6;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.card .search button:hover {
+  background-color: #1693b9;
+  color: #fff;
+}
+.card .search button i {
+  font-size: 20px;
+}
+
+.weather {
+  text-align: center;
+  text-transform: capitalize;
+}
+.weather .weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+.weather .temp {
+  font-size: 80px;
+  margin: 0;
+  font-weight: 900;
+  min-height: 92px;
+}
+.weather .city {
+  margin-top: -3px;
+  font-weight: 600;
+  font-size: 40px;
+  min-height: 46px;
+}
+
+.weather .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.weather .details .col {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.weather .details .col img {
+  width: 45px;
+  margin-right: 12px;
+}
+.weather .details .col .wind,
+.weather .details .col .humidity {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 100px auto;
+  }
+  .card .search input {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  .card .search button {
+    height: 40px;
+    width: 53px;
+  }
+  .weather .weather-icon {
+    margin-top: 10px;
+  }
+  .weather .details {
+    flex-direction: column;
+  }
+  .weather .details .col:first-child {
+    margin-bottom: 20px;
+  }
+}
